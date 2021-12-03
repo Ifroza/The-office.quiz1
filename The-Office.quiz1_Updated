@@ -1,0 +1,48 @@
+print("Is 'The office' your favorite show? Let's see how well you do in this quiz!")
+
+name_player= input('Enter your name please: ')
+print("Alright",name_player, ", let's begin!")
+score = 0
+
+answer= input("What does Michael pretend to fire Pam over in season one? ")
+answer=answer.lower()
+if answer == 'stealing post-it notes' or 'stealing postit notes' or 'stealing post it notes':
+  score +=1
+  print("Well done! That's correct!!")
+else:
+  print("Umm, nope that's not it...")
+
+answer= input("What's Pam's favorite flavor of yogurt? ")
+answer=answer.lower()
+if answer == 'mixed berry':
+  score +=1
+  print("Woohoo, yes!")
+else:
+  print("Nah")
+
+answer= input("What's Phyllis's maiden name? ")
+answer=answer.lower()
+if answer == 'lapin':
+  score +=1
+  print("Yep, absolutely right!")
+else:
+  print("That's incorrect!")
+
+answer= input("What does Kevin suggest Dwight put in his gun holster? ")
+answer=answer.lower()
+if answer == 'a banana':
+  score +=1
+  print("Yesss, you rock!")
+else:
+  print("Well, nope!")
+
+answer= input("In the episode when Ryan started the fire, which game does Michael say he plays every night before bed? ")
+answer=answer.lower()
+if answer == 'who would you do?':
+  score +=1
+  print("Goddang, you are correct!")
+else:
+  print("Nooo!")
+
+print("Congrats, you have made it to the end!")
+print(name_player + ", you got " + str(score) + " out of 5 questions right!")
